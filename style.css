@@ -3,6 +3,9 @@
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+body {
+  margin-bottom: 100px;
+}
 
 h1,
 h2,
@@ -90,6 +93,10 @@ h3 {
   color: white;
 }
 
+.primary-link:hover {
+  color: white;
+}
+
 h4 {
   font-size: 48px;
 }
@@ -101,4 +108,26 @@ p {
 
 .about-title {
   margin-top: 120px;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
